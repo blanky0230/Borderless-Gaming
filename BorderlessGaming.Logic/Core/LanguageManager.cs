@@ -55,6 +55,7 @@ namespace BorderlessGaming.Logic.Core
         public static void Load()
         {
             Languages = new Dictionary<string, Language>();
+            //TODO: Mindlessly crashes if archive not in same dir as executable
             if (File.Exists(_archiveName))
             {
                 try
